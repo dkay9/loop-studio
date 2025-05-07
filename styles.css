@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Grey-200: hsl(0, 0%, 85%);
+    --Grey-300: hsl(0, 0%, 60%);
+}
+/* GROUP STYLING */
+h1{
+    font-size: 70px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+p{
+    font-family: "Alata",  sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px 180px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--Grey-200);
+}
+header > section {
+    border: 2px solid var(--White);
+    color: var(--White);
+    margin-top: 10em;
+    width: 50%;
+    padding: 20px;
+}
+/* header > section h1{
+    color: var(--White);
+    font-size: 70px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+} */
+
+/* SECTION ONE STYLES */
+.section1{
+    padding: 50px 180px;
+    display: flex;
+}
+.section1 div{
+    margin-top: 14em;
+    padding: 75px;
+    background: var(--White);
+    position: absolute;
+    width: 40%;
+    right: 200px;
+}
+.section1 div h1{
+    font-size: 3.5rem;
+}
+.section1 div p{
+    color: var(--Grey-300);
+}
+
+/* SECTION TWO STYLES */
+.section2{
+    margin-top: 4em;
+    padding: 50px 180px;
+}
+.section-title{
+    display: flex;
+    justify-content: space-between;
+}
+.section-title h1{
+    font-size: 3.5rem;
+}
+.section-title a button{
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid var(--Black);
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px; 
+    margin-top: 30px;
+}
+.img-container > div{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    
+}
+.img-container > div h1 {
+    font-size: 30px;
+    width: 70%;
+}
+.img1{
+    /* background-image: url('images/desktop/image-deep-earth.jpg'); */
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-deep-earth.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img2{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-night-arcade.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img3{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-soccer-team.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img4{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-grid.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img5{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-from-above.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img6{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-pocket-borealis.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img7{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-curiosity.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+.img8{
+    background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-fisheye.jpg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--White);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
