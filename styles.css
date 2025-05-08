@@ -56,14 +56,19 @@ header > section {
     width: 50%;
     padding: 20px;
 }
-/* header > section h1{
-    color: var(--White);
-    font-size: 70px;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 300;
-} */
+.menu > img{
+    display: none;
+}
+.nav-toggle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#close-menu{
+    display: none;
+}
 /* SECTION ONE STYLES */
 .section1{
     padding: 50px 180px;
@@ -136,7 +141,6 @@ header > section {
     width: 70%;
 }
 .img1{
-    /* background-image: url('images/desktop/image-deep-earth.jpg'); */
     background: linear-gradient(to bottom, transparent, black), url('images/desktop/image-deep-earth.jpg');
     height: 450px;
     background-size: cover;
@@ -249,21 +253,40 @@ i{
         width: 100%;
         background-size: cover;
     }
+    .menu > img,
+    #close-menu{
+        display: block;
+    }
+    #menu-toggle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 0 3em 0;
+    }
     .hamburger {
         display: block;
     }
-    nav > ul{
+    .hidden{
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #111;
+    }
+    .show{
+        display: flex;
         flex-direction: column;
-        padding: 16px 0;
+        gap: 16px;
+        background: var(--Black);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
     }
     nav > ul li{
-        text-align: center;
+        text-align: start;
         padding: 12px 0;
     }
     header > section{
@@ -271,7 +294,7 @@ i{
     }
     .section1{
         display: block;
-        padding: 10px 20px;
+        padding: 60px 20px;
         position: none;
         width: 100%;
     }
@@ -305,8 +328,6 @@ i{
     }
     .vr{
         background-image: url('images/mobile/image-interactive.jpg');
-        /* background-size: contain;
-        background-repeat: no-repeat; */
         width: 100%;
         height: 400px;
     }
@@ -314,7 +335,6 @@ i{
         font-size: 40px;
     }
     .img1{
-        /* background-image: url('images/desktop/image-deep-earth.jpg'); */
         background: linear-gradient(to bottom, transparent, black), url('images/mobile/image-deep-earth.jpg');
         height: 200px;
         background-size: cover;
@@ -375,17 +395,21 @@ i{
         letter-spacing: 5px;
     }
 
-
+    body.no-scroll {
+        overflow: hidden;
+    }
 
     .img-container {
       grid-template-columns: 1fr; 
-      /* grid-template-rows: repeat(8, auto); */
     }
     .f-div1{
         display: block;
     }
-    .f-div1  div{
-        margin: 0 auto;
+    .f-div1 > div{
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
     .f-div2{
         display: block;

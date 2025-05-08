@@ -14,11 +14,19 @@
 <body>
   <header>
     <nav>
-      <img src="images/logo.svg" alt="Logo">
-      <div class="hamburger">
-        <img src="images/icon-hamburger.svg" alt="">
+      <div class="nav-toggle">
+        <img src="images/logo.svg" alt="Logo">
+        <div class="hamburger">
+          <img id="hamburger" src="images/icon-hamburger.svg" alt="">
+        </div>
       </div>
-      <ul>
+      <ul id="nav-links" class="hidden">
+        <div id="menu-toggle" class="menu">
+          <img src="images/logo.svg" alt="Logo">
+          <div class="close">
+            <img id="close-menu" src="images/icon-close.svg" alt="">
+          </div>
+        </div>
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Events</a></li>
@@ -105,6 +113,6 @@
     </div>
   </footer>
 
-  
+  <script src="main.js"></script>
 </body>
 </html>
